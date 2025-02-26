@@ -6,7 +6,7 @@ class EntriesController < ApplicationController
 
     @entry["title"] = params["title"]
     @entry["description"] = params["description"]
-    @entry["date"] = params["date"]
+    @entry["occurred_on"] = params["occurred_on"]
 
 
     @entry["place_id"] = params["place_id"]
