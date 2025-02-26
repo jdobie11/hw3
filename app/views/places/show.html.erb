@@ -3,9 +3,12 @@
 <h3>Entries</h3>
 <ul>
   <% for entry in @entries %>
-    <li><%= entry["title"] %> - <%= entry["date"] %></li>
+    <li><%= entry["title"] %> -
+    <%= entry["description"] %>
+    <%= entry["date"] %></li>
+
   <% end %>
 </ul>
 
-<p><a href="/entries/new?place_id=<%= @place["id"] %>">Add new entry</a></p>
+<p><a href="/entries/new?place_id=<%= @place["id"] %>">New Post</a></p>
 <p><a href="/places">Back to all places</a></p>
