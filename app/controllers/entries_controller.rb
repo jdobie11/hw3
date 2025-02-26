@@ -8,6 +8,7 @@ class EntriesController < ApplicationController
     @entry["description"] = params["description"]
     @entry["date"] = params["date"]
 
+
     @entry["place_id"] = params["place_id"]
 
     if @entry.save

@@ -23,9 +23,9 @@ class PlacesController < ApplicationController
     end
   end
 
-  private
+
 
   def place_params
-    params.require(:place).permit(:name) #  add other attributes later like :city, :country
+    params.require(:place).permit(:name) 
   end
 end
